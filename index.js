@@ -1,8 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const home = require('./Routes/Home.js')
-const topquestions = require('./Routes/TopQuestions.js')
+const home = require('./Routes/Home.js');
+const topquestions = require('./Routes/TopQuestions.js');
 const answer = require('./Routes/Answer.js');
 const error = require('./Routes/Error.js');
 

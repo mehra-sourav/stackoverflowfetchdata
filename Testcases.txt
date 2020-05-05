@@ -1,0 +1,10 @@
+<!-- Following test cases are for Postman API testing -->
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Returns 10 questions",
+    function(){
+    pm.expect(pm.response.json().length).to.equal(10);        
+});
