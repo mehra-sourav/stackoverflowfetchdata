@@ -1,10 +1,16 @@
 <!-- Following test cases are for Postman API testing -->
 
+**For both endpoints**
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 
+
+**For Top 10 Questions endpoint only**
 pm.test("Returns 10 questions",
     function(){
     pm.expect(pm.response.json().length).to.equal(10);        
 });
+
+
+
