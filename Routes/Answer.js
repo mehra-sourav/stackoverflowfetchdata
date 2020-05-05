@@ -68,10 +68,10 @@ router.get('/answer', (req,res) => {
                 }
             })
             .catch(error => res.send(error));
-    }
+    }       
     else
     {
-        res.send("No question ID provided");
+        res.sendStatus(400);//.send("No question ID provided");
     }
 });
 
